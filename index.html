@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammed Padanad | software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">{</span>SP<span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting reveal">
+                    <span class="wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-name reveal">
+                    <span class="gradient-text">Sammed Mahabal Padanad</span>
+                </h1>
+                <div class="hero-title-wrap reveal">
+                    <h2 class="hero-title">
+                        <span class="typed-text" id="typedText"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                </div>
+                <p class="hero-desc reveal">
+                    Computer Science & Engineering student passionate about building
+                    <span class="accent">AI-powered solutions</span>,
+                    <span class="accent">cybersecurity systems</span>, and
+                    scalable applications that solve real-world problems.
+                </p>
+                <div class="hero-ctas reveal">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="mailto:sammedpadanad979@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/sammed979" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="tel:+919148028028" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="code-card">
+                    <div class="code-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">about_me.py</span>
+                    </div>
+                    <pre class="code-body"><code><span class="c-key">class</span> <span class="c-class">SammedPadanad</span>:
+    <span class="c-key">def</span> <span class="c-fn">__init__</span>(<span class="c-arg">self</span>):
+        <span class="c-arg">self</span>.<span class="c-prop">name</span> = <span class="c-str">"Sammed Padanad"</span>
+        <span class="c-arg">self</span>.<span class="c-prop">role</span> = <span class="c-str">"AI/ML Engineer"</span>
+        <span class="c-arg">self</span>.<span class="c-prop">stack</span> = [
+            <span class="c-str">"Python"</span>, <span class="c-str">"Java"</span>,
+            <span class="c-str">"Django"</span>, <span class="c-str">"ML/AI"</span>,
+            <span class="c-str">"SQL"</span>, <span class="c-str">"REST APIs"</span>
+        ]
+        <span class="c-arg">self</span>.<span class="c-prop">interests</span> = {
+            <span class="c-str">"AI"</span>: <span class="c-bool">True</span>,
+            <span class="c-str">"Cybersecurity"</span>: <span class="c-bool">True</span>,
+            <span class="c-str">"Automation"</span>: <span class="c-bool">True</span>
+        }
+        <span class="c-arg">self</span>.<span class="c-prop">status</span> = <span class="c-str">"Building the future 🚀"</span></code></pre>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-brain"></i> AI Enthusiast
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-shield-halved"></i> Security Focused
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">01 / Introduction</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <p class="lead">
+                        I'm a passionate <strong>Computer Science & Engineering student</strong> at Bahubali College of Engineering,
+                        with a deep curiosity for how technology can solve meaningful problems.
+                    </p>
+                    <p>
+                        My journey spans across <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>,
+                        and <strong>Cybersecurity</strong> — three domains I believe will define the next decade of innovation.
+                        I love turning complex ideas into working software, whether it's training a neural network to detect diseases
+                        in livestock or building systems that protect users from digital fraud.
+                    </p>
+                    <p>
+                        With hands-on experience from <strong>2 cybersecurity internships</strong>, multiple hackathons,
+                        and several end-to-end ML projects, I bring a blend of theoretical knowledge and practical execution
+                        to every challenge I take on.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-num" data-target="6">0</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-target="2">0</div>
+                            <div class="stat-label">Internships Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-target="3">0</div>
+                            <div class="stat-label">Hackathons Participated</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-target="7">0</div>
+                            <div class="stat-label">Tech Stack</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card reveal">
+                    <div class="info-block">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <span class="info-label">Full Name</span>
+                            <span class="info-value">Sammed Mahabal Padanad</span>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Hassan, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <span class="info-label">Degree</span>
+                            <span class="info-value">B.E. - CSE (2024 - 2028)</span>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="info-label">Email</span>
+                            <span class="info-value email">sammedpadanad979@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="info-label">Phone</span>
+                            <span class="info-value">+91 9148028028</span>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <span class="info-label">Availability</span>
+                            <span class="info-value available"><i class="fas fa-circle"></i> Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">02 / Toolkit</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-cat-head">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fab fa-python skill-ic"></i> Python</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-level="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fab fa-java skill-ic"></i> Java</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fab fa-js skill-ic"></i> JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fas fa-hashtag skill-ic"></i> C / C#</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-head">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Development & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Django</span>
+                        <span class="skill-tag"><i class="fas fa-plug"></i> REST APIs</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-code-branch"></i> CI/CD Basics</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-head">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI / Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-chart-line"></i> Supervised Learning</span>
+                        <span class="skill-tag"><i class="fas fa-eye"></i> Computer Vision</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Neural Networks</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> Data Analysis</span>
+                        <span class="skill-tag"><i class="fas fa-filter"></i> Feature Engineering</span>
+                        <span class="skill-tag"><i class="fas fa-chart-bar"></i> Model Evaluation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-head">
+                        <i class="fas fa-shield-halved"></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-bug"></i> Vulnerability Assessment</span>
+                        <span class="skill-tag"><i class="fas fa-user-secret"></i> Threat Analysis</span>
+                        <span class="skill-tag"><i class="fas fa-lock"></i> System Security</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> Network Security Basics</span>
+                        <span class="skill-tag"><i class="fas fa-clipboard-check"></i> Security Audits</span>
+                        <span class="skill-tag"><i class="fas fa-shield-virus"></i> Fraud Detection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">03 / Featured Work</span>
+                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+                <p class="section-sub">A selection of projects showcasing my work in AI, cybersecurity, and full-stack development.</p>
+            </div>
+
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <article class="project-card reveal" data-category="ai" data-priority="1">
+                    <div class="project-thumb thumb-cattle">
+                        <div class="project-overlay">
+                            <a href="#" class="proj-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/sammed979/krushidoc" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="proj-icon"><i class="fas fa-cow"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="proj-meta">
+                            <span class="proj-date"><i class="far fa-calendar"></i> Oct 2025</span>
+                            <span class="proj-badge ai"><i class="fas fa-brain"></i> AI / ML</span>
+                        </div>
+                        <h3 class="proj-title">AI-Based Cattle Breed & Disease Recognizer</h3>
+                        <p class="proj-desc">
+                            Comprehensive AI-powered system for <strong>cattle & buffalo species classification</strong>,
+                            breed identification, disease detection, and body measurement analysis with ATC score calculation.
+                        </p>
+                        <div class="proj-features">
+                            <span><i class="fas fa-check"></i> Breed Classification</span>
+                            <span><i class="fas fa-check"></i> Disease Detection</span>
+                            <span><i class="fas fa-check"></i> Body Measurement</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Python</span><span>ML</span><span>Computer Vision</span><span>Django</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="security ai" data-priority="2">
+                    <div class="project-thumb thumb-fraud">
+                        <div class="project-overlay">
+                            <a href="#" class="proj-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/sammed979/upi-shield-ai" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="proj-icon"><i class="fas fa-shield-virus"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="proj-meta">
+                            <span class="proj-date"><i class="far fa-calendar"></i> May 2025</span>
+                            <span class="proj-badge security"><i class="fas fa-shield-halved"></i> Security / ML</span>
+                        </div>
+                        <h3 class="proj-title">UPI Fraud Detection System</h3>
+                        <p class="proj-desc">
+                            Machine Learning-based system engineered to detect <strong>suspicious & fraudulent UPI transactions</strong>
+                            in real-time, applying advanced transaction analysis and ML techniques for digital payment security.
+                        </p>
+                        <div class="proj-features">
+                            <span><i class="fas fa-check"></i> Real-time Detection</span>
+                            <span><i class="fas fa-check"></i> Transaction Analysis</span>
+                            <span><i class="fas fa-check"></i> Risk Scoring</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="ai" data-priority="3">
+                    <div class="project-thumb thumb-pest">
+                        <div class="project-overlay">
+                            <a href="#" class="proj-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="proj-icon"><i class="fas fa-bug"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="proj-meta">
+                            <span class="proj-date"><i class="far fa-calendar"></i> May 2025</span>
+                            <span class="proj-badge ai"><i class="fas fa-brain"></i> AI / ML</span>
+                        </div>
+                        <h3 class="proj-title">AI-Based Pest Detector</h3>
+                        <p class="proj-desc">
+                            AI/ML-powered agricultural application for <strong>pest detection & classification</strong>,
+                            designed to enable early pest identification and significantly reduce crop damage for farmers.
+                        </p>
+                        <div class="proj-features">
+                            <span><i class="fas fa-check"></i> Pest Classification</span>
+                            <span><i class="fas fa-check"></i> Early Detection</span>
+                            <span><i class="fas fa-check"></i> Crop Protection</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Python</span><span>Image Recognition</span><span>CNN</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="web" data-priority="4">
+                    <div class="project-thumb thumb-rail">
+                        <div class="project-overlay">
+                            <a href="#" class="proj-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="proj-icon"><i class="fas fa-train"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="proj-meta">
+                            <span class="proj-date"><i class="far fa-calendar"></i> Mar 2025</span>
+                            <span class="proj-badge web"><i class="fas fa-globe"></i> Web App</span>
+                        </div>
+                        <h3 class="proj-title">RailFast — Tatkal Train Ticket Booking</h3>
+                        <p class="proj-desc">
+                            A <strong>mobile-first Tatkal train ticket booking platform</strong> with integrated WhatsApp
+                            notifications for FastRail Tatkal Service, built for speed and user experience.
+                        </p>
+                        <div class="proj-features">
+                            <span><i class="fas fa-check"></i> Mobile-First Design</span>
+                            <span><i class="fas fa-check"></i> WhatsApp Integration</span>
+                            <span><i class="fas fa-check"></i> Fast Booking</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="web" data-priority="5">
+                    <div class="project-thumb thumb-cert">
+                        <div class="project-overlay">
+                            <a href="#" class="proj-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="proj-icon"><i class="fas fa-certificate"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="proj-meta">
+                            <span class="proj-date"><i class="far fa-calendar"></i> May 2025</span>
+                            <span class="proj-badge web"><i class="fas fa-globe"></i> Web Platform</span>
+                        </div>
+                        <h3 class="proj-title">CertSparks — Student Career Platform</h3>
+                        <p class="proj-desc">
+                            India's most affordable student career platform offering <strong>500+ free certifications</strong>
+                            for ₹10, ₹100 cash prizes in quiz competitions, AWS exam practice, and hackathon projects.
+                        </p>
+                        <div class="proj-features">
+                            <span><i class="fas fa-check"></i> 500+ Certifications</span>
+                            <span><i class="fas fa-check"></i> Quiz Competitions</span>
+                            <span><i class="fas fa-check"></i> AWS Exam Prep</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>JavaScript</span><span>Full-Stack</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="web" data-priority="6">
+                    <div class="project-thumb thumb-speak">
+                        <div class="project-overlay">
+                            <a href="#" class="proj-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/sammed979/speakmate" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="proj-icon"><i class="fas fa-comments"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="proj-meta">
+                            <span class="proj-date"><i class="far fa-calendar"></i> 2025</span>
+                            <span class="proj-badge web"><i class="fab fa-java"></i> Java App</span>
+                        </div>
+                        <h3 class="proj-title">SpeakMate — Language Learning App</h3>
+                        <p class="proj-desc">
+                            A Java-based interactive language learning application designed to help users
+                            practice conversational skills with an engaging, user-friendly interface.
+                        </p>
+                        <div class="proj-features">
+                            <span><i class="fas fa-check"></i> Interactive Learning</span>
+                            <span><i class="fas fa-check"></i> Practice Conversations</span>
+                            <span><i class="fas fa-check"></i> Progress Tracking</span>
+                        </div>
+                        <div class="proj-tech">
+                            <span>Java</span><span>OOP</span><span>Swing / JavaFX</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">04 / Career Path</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Internships</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-head">
+                            <span class="tl-period">
+                                <i class="far fa-calendar-alt"></i> Jan 2025 – Mar 2025
+                            </span>
+                            <span class="tl-tag remote"><i class="fas fa-laptop-house"></i> Virtual</span>
+                        </div>
+                        <h3 class="tl-title">Cybersecurity Intern</h3>
+                        <h4 class="tl-company">Placemantra</h4>
+                        <p class="tl-desc">
+                            Worked intensively on <strong>cybersecurity fundamentals</strong>, gaining practical
+                            real-world exposure to modern <strong>threat landscapes</strong>, system
+                            <strong>vulnerabilities</strong>, and foundational <strong>security best practices</strong>
+                            essential for protecting organizational assets.
+                        </p>
+                        <ul class="tl-points">
+                            <li><i class="fas fa-shield-halved"></i> Analyzed emerging threats and attack vectors</li>
+                            <li><i class="fas fa-bug"></i> Learned vulnerability assessment methodologies</li>
+                            <li><i class="fas fa-lock"></i> Implemented basic security hardening practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-head">
+                            <span class="tl-period">
+                                <i class="far fa-calendar-alt"></i> Mar 2024 – Sep 2024
+                            </span>
+                            <span class="tl-tag on-site"><i class="fas fa-building"></i> Belagavi</span>
+                        </div>
+                        <h3 class="tl-title">Cybersecurity Intern</h3>
+                        <h4 class="tl-company">Defronix Cyber Security</h4>
+                        <p class="tl-desc">
+                            Gained in-depth, hands-on understanding of <strong>core cybersecurity concepts</strong>,
+                            <strong>system security architecture</strong>, and identification/mitigation of
+                            <strong>common vulnerabilities</strong> across enterprise systems and networks.
+                        </p>
+                        <ul class="tl-points">
+                            <li><i class="fas fa-network-wired"></i> Explored network security protocols & architecture</li>
+                            <li><i class="fas fa-user-secret"></i> Studied penetration testing fundamentals</li>
+                            <li><i class="fas fa-clipboard-check"></i> Participated in security audit procedures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">05 / Academic</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Learning</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <span class="edu-year">2024 – 2028</span>
+                    <h3 class="edu-degree">B.E. — Computer Science & Engineering</h3>
+                    <h4 class="edu-college">Bahubali College of Engineering, Shravanabelagola</h4>
+                    <p class="edu-desc">
+                        Currently pursuing undergraduate degree with focus on <strong>Artificial Intelligence</strong>,
+                        <strong>Machine Learning</strong>, and <strong>Cybersecurity</strong> specializations through
+                        self-driven projects and internships alongside academic curriculum.
+                    </p>
+                    <div class="edu-tags">
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                        <span>OS</span>
+                        <span>DBMS</span>
+                        <span>Networks</span>
+                    </div>
+                </div>
+                <div class="edu-card reveal training">
+                    <div class="edu-icon alt">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <span class="edu-year">May 2025</span>
+                    <h3 class="edu-degree">Placement & Skill Development Training</h3>
+                    <h4 class="edu-college">ABC Technology, Hassan</h4>
+                    <p class="edu-desc">
+                        Intensive training program covering <strong>aptitude skills</strong>,
+                        <strong>technical interview preparation</strong>, resume building,
+                        and professional soft-skills development for campus placement readiness.
+                    </p>
+                    <div class="edu-tags">
+                        <span>Aptitude</span>
+                        <span>Soft Skills</span>
+                        <span>Interview Prep</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">06 / Recognition</span>
+                <h2 class="section-title">Achievements & <span class="gradient-text">Hackathons</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="achieve-grid">
+                <div class="ach-card reveal">
+                    <div class="ach-icon gold"><i class="fas fa-trophy"></i></div>
+                    <span class="ach-year">2025</span>
+                    <h3 class="ach-title">National-Level Raise Your Hack Competition</h3>
+                    <p class="ach-desc">
+                        Represented team in a <strong>national-level hackathon</strong>, working on a cutting-edge
+                        <strong>Multi-Agent Workflow for Enterprise Automation</strong> — demonstrating innovation
+                        and systems thinking at scale.
+                    </p>
+                    <div class="ach-tags">
+                        <span>Multi-Agent Systems</span><span>Automation</span><span>National Level</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal">
+                    <div class="ach-icon silver"><i class="fas fa-award"></i></div>
+                    <span class="ach-year">2025</span>
+                    <h3 class="ach-title">State-Level Hackathon — Dyashin Technosoft</h3>
+                    <p class="ach-desc">
+                        Selected participant in a <strong>state-level hackathon</strong> conducted by Dyashin Technosoft Pvt. Ltd.,
+                        collaborating with peers to design and prototype innovative software solutions under tight deadlines.
+                    </p>
+                    <div class="ach-tags">
+                        <span>Team Collaboration</span><span>Rapid Prototyping</span><span>State Level</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal">
+                    <div class="ach-icon bronze"><i class="fas fa-brain"></i></div>
+                    <span class="ach-year">2025</span>
+                    <h3 class="ach-title">AI/ML Project Portfolio — 6+ Projects</h3>
+                    <p class="ach-desc">
+                        End-to-end project execution across <strong>computer vision</strong>,
+                        <strong>fraud detection</strong>, and <strong>agri-tech AI</strong> —
+                        showcasing consistent ability to ship ML-powered solutions from idea to deployment.
+                    </p>
+                    <div class="ach-tags">
+                        <span>Computer Vision</span><span>Security ML</span><span>AgriTech</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal">
+                    <div class="ach-icon green"><i class="fas fa-shield-halved"></i></div>
+                    <span class="ach-year">2024</span>
+                    <h3 class="ach-title">Cybersecurity Internships — 2 Completions</h3>
+                    <p class="ach-desc">
+                        Completed <strong>two back-to-back cybersecurity internships</strong> with Defronix Cyber Security
+                        and Placemantra — building a strong security foundation well ahead of the academic curve.
+                    </p>
+                    <div class="ach-tags">
+                        <span>Threat Analysis</span><span>Vulnerability Assessment</span><span>Real-World Exposure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">07 / Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+                <p class="section-sub">
+                    I'm currently open to <strong>internships</strong>, <strong>fellowships</strong>, and
+                    <strong>collaborative projects</strong> in AI, ML, and cybersecurity domains. Let's build something amazing together!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <a href="mailto:sammedpadanad979@gmail.com" class="contact-card">
+                        <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <span class="cc-label">Email Me</span>
+                            <span class="cc-value">sammedpadanad979@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-right cc-arrow"></i>
+                    </a>
+                    <a href="tel:+919148028028" class="contact-card">
+                        <div class="cc-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <span class="cc-label">Call / WhatsApp</span>
+                            <span class="cc-value">+91 9148028028</span>
+                        </div>
+                        <i class="fas fa-arrow-right cc-arrow"></i>
+                    </a>
+                    <div class="contact-card" style="cursor: default;">
+                        <div class="cc-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <span class="cc-label">Based In</span>
+                            <span class="cc-value">Hassan, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/sammed979" target="_blank" rel="noopener" class="contact-card">
+                        <div class="cc-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <span class="cc-label">GitHub</span>
+                            <span class="cc-value">github.com/sammed979</span>
+                        </div>
+                        <i class="fas fa-arrow-right cc-arrow"></i>
+                    </a>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about the opportunity or how we can work together..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-note" id="formNote"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-bracket">{</span>SP<span class="logo-bracket">}</span>
+                    </a>
+                    <p>Building AI-powered solutions & secure systems for the future.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:sammedpadanad979@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/sammed979" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="tel:+919148028028"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Sammed Mahabal Padanad. Designed & built with <i class="fas fa-heart" style="color:#ff4757;"></i> and lots of <i class="fas fa-mug-hot" style="color:#e17055;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
